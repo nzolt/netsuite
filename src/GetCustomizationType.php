@@ -1,0 +1,21 @@
+<?php
+
+namespace Nzolt\NetSuite;
+
+class GetCustomizationType
+{
+    const __default = 'crmCustomField';
+    const crmCustomField = 'crmCustomField';
+    const customList = 'customList';
+    const customRecordType = 'customRecordType';
+    const customTransactionType = 'customTransactionType';
+    const entityCustomField = 'entityCustomField';
+    const itemCustomField = 'itemCustomField';
+    const itemNumberCustomField = 'itemNumberCustomField';
+    const itemOptionCustomField = 'itemOptionCustomField';
+    const otherCustomField = 'otherCustomField';
+    const transactionBodyCustomField = 'transactionBodyCustomField';
+    const transactionColumnCustomField = 'transactionColumnCustomField';
+
+
+}

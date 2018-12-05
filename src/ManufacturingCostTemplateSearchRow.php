@@ -1,0 +1,106 @@
+<?php
+
+namespace Nzolt\NetSuite;
+
+class ManufacturingCostTemplateSearchRow extends SearchRow
+{
+
+    /**
+     * @var ManufacturingCostTemplateSearchRowBasic $basic
+     */
+    protected $basic = null;
+
+    /**
+     * @var ItemSearchRowBasic $itemJoin
+     */
+    protected $itemJoin = null;
+
+    /**
+     * @var EmployeeSearchRowBasic $userJoin
+     */
+    protected $userJoin = null;
+
+    /**
+     * @var CustomSearchRowBasic[] $customSearchJoin
+     */
+    protected $customSearchJoin = null;
+
+    
+    public function __construct()
+    {
+    
+    }
+
+    /**
+     * @return ManufacturingCostTemplateSearchRowBasic
+     */
+    public function getBasic()
+    {
+      return $this->basic;
+    }
+
+    /**
+     * @param ManufacturingCostTemplateSearchRowBasic $basic
+     * @return \Nzolt\NetSuite\ManufacturingCostTemplateSearchRow
+     */
+    public function setBasic($basic)
+    {
+      $this->basic = $basic;
+      return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getItemJoin()
+    {
+      return $this->itemJoin;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $itemJoin
+     * @return \Nzolt\NetSuite\ManufacturingCostTemplateSearchRow
+     */
+    public function setItemJoin($itemJoin)
+    {
+      $this->itemJoin = $itemJoin;
+      return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin()
+    {
+      return $this->userJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return \Nzolt\NetSuite\ManufacturingCostTemplateSearchRow
+     */
+    public function setUserJoin($userJoin)
+    {
+      $this->userJoin = $userJoin;
+      return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin()
+    {
+      return $this->customSearchJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return \Nzolt\NetSuite\ManufacturingCostTemplateSearchRow
+     */
+    public function setCustomSearchJoin(array $customSearchJoin = null)
+    {
+      $this->customSearchJoin = $customSearchJoin;
+      return $this;
+    }
+
+}
